@@ -2,15 +2,15 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Physics Testing</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Physics Testing</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <script src="script.js"></script>
-  <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+	<script src="script.js"></script>
+	<script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
 	<script src="https://rawcdn.githack.com/elbobo/aframe-animation-toggle-component/7ef92afbc8b16ad34c1689945ff9f46c570be2d6/dist/aframe-animation-toggle-component.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.0.0/dist/aframe-extras.min.js"></script>
 	<script src="https://rawgit.com/mayognaise/aframe-mouse-cursor-component/master/dist/aframe-mouse-cursor-component.min.js"></script>
@@ -20,13 +20,12 @@
 		<a-sky color="lightblue"></a-sky>
 
 		<a-camera>
-      <a-cursor color="black" 
+			<a-cursor color="black" 
 				animation__down="
 					property: color;
 					from: white;
 					to: white;
-					startEvents: mousedown;
-				"
+					startEvents: mousedown;"
 				animation__up="
 					property: color;
 					from: black;
@@ -34,7 +33,7 @@
 					startEvents: mouseup;
 				"
 			></a-cursor>
-    </a-camera>
+		</a-camera>
 		
 		<a-plane
 			static-body
