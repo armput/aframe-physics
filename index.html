@@ -34,23 +34,6 @@
 				"
 			></a-cursor>
 		</a-camera>
-		
-		<a-plane
-			static-body
-			height="50"
-			width="50"
-			opacity="0"
-			rotation="-90 0 0"
-			shape="hull"
-			animation="
-				property: position;
-				from: 0 0 0;
-				to: 0 1 0;
-				dur: 200;
-				dir: alternate;
-				loop: 2;
-				startEvents: click;"
-		></a-plane>
 
 		<a-plane
 			static-body
@@ -61,15 +44,11 @@
 			shape="hull"
 		></a-plane>
 
-		<a-box
-			dynamic-body
-			position="0 4 -4"
-			height="1"
-			width="1"
-			depth="1"
+		<a-plane 
+			static-body
+			position="0 0 -5"
 			color="blue"
-			shape="hull"
-		></a-box>
+		></a-plane>
 		
 	</a-scene>
 	
