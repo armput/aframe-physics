@@ -44,18 +44,26 @@
 			shape="hull"
 		></a-plane>
 
-		<a-plane 
-			static-body
-			position="0 1 -5"
-			color="blue"
-			height="4"
-			width="3"
-			rotation="-75.522 90 0"
-		></a-plane>
-
-		<a-box
-
-		></a-box>
+		<a-entity id="container">
+			<a-entity id="roller">
+				<a-plane 
+					static-body
+					position="0 1 -5"
+					color="blue"
+					height="4"
+					width="3"
+					rotation="0 90 0"
+				></a-plane>
+				<a-plane
+					static-body
+					position="2 1 -5"
+					color="blue"
+					height="1"
+					width="3"
+				></a-plane>
+			</a-entity>
+		</a-entity>
+			
 		
 	</a-scene>
 	
