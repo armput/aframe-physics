@@ -44,10 +44,9 @@
 			shape="hull"
 		></a-plane>
 
-		<a-entity id="roller">
-			<a-entity 
-				id="catapult"
-				position="-2 1.25 -5"
+		<a-entity id="catapult" 
+			position="-2 1.25 -5">
+			<a-entity id="launcher"
 				animation__cock="
 					property: rotation;
 					from: 0 0 0;
@@ -58,30 +57,72 @@
 					property: rotation;
 					from: 0 0 -10;
 					to: 0 0 0;
-					dur: 300;
-					easing: easeOutElastic;
+					dur: 250;
+					easing: easeInOutElastic;
 					startEvents: click;
 				">
 				<a-box 
 					static-body
 					position="2 0 0"
 					color="blue"
-					height="0.1"
-					width="4"
-					depth="3"
+					height="4"
+					width="3"
+					depth="0.1"
 					rotation="-90 90 0"
 				></a-box>
-				<a-plane
+				<a-cylinder
 					static-body
-					position="4 0.5 0"
+					position="3.95 0 0"
 					color="blue"
-					height="1"
-					width="3"
-					rotation="0 -90 0"
-				></a-plane>
+					height="3"
+					radius="0.5"
+					rotation="90 0 0"
+				></a-cylinder>
+				<a-cylinder
+					static-body
+					color="blue"
+					position="0 0 0"
+					rotation="90 0 0"
+					height="3"
+					radius="0.1"
+				></a-cylinder>
+			</a-entity>
+			<a-entity id="legs">
+				<a-sphere
+					static-body
+					color="blue"
+					position="0 0 1.5"
+					radius="0.1"
+				></a-sphere>
+				<a-sphere
+					static-body
+					color="blue"
+					position="0 0 -1.5"
+					radius="0.1"
+				></a-sphere>
+				<a-cylinder
+					static-body
+					color="blue"
+					position="0 -0.6 1.5"
+					height="1.25"
+					radius="0.1"
+				></a-cylinder>
+				<a-cylinder
+					static-body
+					color="blue"
+					position="0 -0.6 -1.5"
+					height="1.25"
+					radius="0.1"
+				></a-cylinder>
 			</a-entity>
 		</a-entity>
-			
+		
+		<a-sphere
+			dynamic-body
+			color="gray"
+			position="0 2 -5"
+			radius="0.5"
+		></a-sphere>
 		
 	</a-scene>
 	
